@@ -1,0 +1,31 @@
+Sorter for download folder for files older than 14 days to be automatically sorted to folders inside the pc or archived/deleted
+
+
+Автоматический очиститель папки «Загрузки»: Скрипт, который раз в сутки сканирует загрузки. Файлы старше 14 дней он переносит в архив, старые установщики программ (.exe, .dmg) удаляет, а документы раскладывает по папкам Проекты, Чеки, Учеба
++логи
++ мини интерфейс с кнопками (принудительная сортировка, открить папки из него)
++ открытие по хоткею 
++ настройки
+
+(back)
+    - sort
+            - sort to folders
+            - archive befroe deleting
+            - 30 days in archive -> deleting 
+    - logs
+        - time it was sorted
+        - where it was sorted
+        - reason sorded(like automatic or manual)
+    - hotkey
+        - by pressing hotkey the sorter function gets activated
+    
+    
+(front)
+    - interface
+        - manual call of sort function(as with hotkey but with an interface)
+        - show what will where sorted(like logs)
+        - settings
+            - path where program is
+            - path to logs
+            - paths to folders where stuff will be sorted
+
