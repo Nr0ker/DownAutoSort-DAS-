@@ -19,7 +19,7 @@ Sorter for download folder for files older than 14 days to be automatically sort
     - hotkey
         - by pressing hotkey the sorter function gets activated
     
-    
+
 (front)
     - interface
         - manual call of sort function(as with hotkey but with an interface)
@@ -28,4 +28,9 @@ Sorter for download folder for files older than 14 days to be automatically sort
             - path where program is
             - path to logs
             - paths to folders where stuff will be sorted
-
+            - naming file
+            - decide what file types go where
+            - custom file sorter?
+            - memory and cpu allocation
+        - show how much memory and cpu ity uses(on/off)
+        - clear papierkorb button
