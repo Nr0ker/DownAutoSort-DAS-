@@ -9,15 +9,14 @@ Sorter for download folder for files older than 14 days to be automatically sort
 
 (back)
     - sort
-            - sort to folders
-            - archive befroe deleting
+            - sort to folders (half/done)
+            - archive before deleting
             - 30 days in archive -> deleting 
     - logs
         - time it was sorted
-        - where it was sorted
-        - reason sorded(like automatic or manual)
-    - hotkey
-        - by pressing hotkey the sorter function gets activated
+        - to where it was sorted
+        - reason sorted(like automatic or manual)
+
     
 
 (front)
@@ -34,3 +33,6 @@ Sorter for download folder for files older than 14 days to be automatically sort
             - memory and cpu allocation
         - show how much memory and cpu ity uses(on/off)
         - clear papierkorb button
+
+    - hotkey
+        - by pressing hotkey the sorter function gets activated

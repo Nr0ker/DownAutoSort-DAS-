@@ -32,29 +32,20 @@ def sorted_dirs():
 
 def down_sort():
     for file in down_path.iterdir():
-        if file.suffix in photo:
-            dest = dir_path.joinpath("photo").joinpath(file.name)
-            file.rename(dest)
-        elif file.suffix in video:
-            dest = dir_path.joinpath("video").joinpath(file.name)
-            file.rename(dest)
-        elif file.suffix in audio:
-            dest = dir_path.joinpath("audio").joinpath(file.name)
-            file.rename(dest)
-        elif file.suffix in files:
-            dest = dir_path.joinpath("files").joinpath(file.name)
-            file.rename(dest)
-        elif file.suffix in rubbish:
-            dest = dir_path.joinpath("deleted").joinpath(file.name)
-            file.rename(dest)
-        elif file.suffix in archives:
-            dest = dir_path.joinpath("archives").joinpath(file.name)
-            file.rename(dest)
-        elif file.is_dir:
+        if file.is_dir():
             continue
-        else:
+        moved = False
+        for name, ext in data_sort.items():
+            if file.suffix in ext:
+                dest = dir_path.joinpath(name).joinpath(file.name)
+                file.rename(dest)
+                moved = True
+                break
+        if not moved:
             print(file)
             print("error")
+
+
 
 
 def creator_back():
@@ -66,5 +57,4 @@ def creator_back():
                 files.replace(dest)
 
 
-
-creator_back()
+down_sort()
